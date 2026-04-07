@@ -55,6 +55,7 @@ car_1._calculate_fuel()
 # car_1.__test()
 # print(car_1.__max_speed)
 # print(car_1._Car__max_speed)  # только для тестирования
+# name mangling
 print(car_1.get_max_speed())
 car_1.__max_speed = 200 # не меняет настоящий атрибут
 print(car_1.get_max_speed())
