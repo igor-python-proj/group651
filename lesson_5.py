@@ -25,3 +25,4 @@ duck = Duck()
 duck.move()
 # method resolution order
 print(Duck.__mro__)
+print(Flying.mro())
