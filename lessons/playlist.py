@@ -17,12 +17,14 @@ class Playlist:
     def __bool__(self):
         return len(self.songs) > 0
 
-pop = Playlist("pop playlist", songs=["Shape of my heart", "Bad guy"])
-print(pop)
-print(len(pop))
-print("Billy Jiens" in pop)
-print("Shape of my heart" in pop)
-if pop:
-    print("Playlist is not empty")
-else:
-    print("Playlist is empty")
+
+if __name__ == "__main__":
+    pop = Playlist("pop playlist", songs=["Shape of my heart", "Bad guy"])
+    print(pop)
+    print(len(pop))
+    print("Billy Jiens" in pop)
+    print("Shape of my heart" in pop)
+    if pop:
+        print("Playlist is not empty")
+    else:
+        print("Playlist is empty")
